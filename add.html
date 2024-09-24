@@ -1,0 +1,99 @@
+<html lang="en" data-theme="light"><head></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom question</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navColor: 'rgb(249, 247, 243)',
+                        btnpramary: 'rgb(180, 244, 97)',
+                        Bdtbtn: 'rgba(17, 17, 17, 0.05)',
+                        coineClor: 'rgba(17, 17, 17, 0.7)'
+                    }
+                }
+            }
+        }
+    </script>
+<style>/* ! tailwindcss v3.4.5 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }.collapse{visibility:collapse}.sticky{position:sticky}.mx-auto{margin-left:auto;margin-right:auto}.mt-24{margin-top:6rem}.block{display:block}.flex{display:flex}.hidden{display:none}.h-7{height:1.75rem}.h-8{height:2rem}.w-7{width:1.75rem}.w-8{width:2rem}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.items-center{align-items:center}.gap-1{gap:0.25rem}.gap-6{gap:1.5rem}.rounded-lg{border-radius:0.5rem}.bg-btnpramary{--tw-bg-opacity:1;background-color:rgb(180 244 97 / var(--tw-bg-opacity))}.bg-navColor{--tw-bg-opacity:1;background-color:rgb(249 247 243 / var(--tw-bg-opacity))}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-medium{font-weight:500}.font-semibold{font-weight:600}.text-coineClor{color:rgba(17, 17, 17, 0.7)}@media (min-width: 1024px){.lg\:block{display:block}.lg\:hidden{display:none}.lg\:h-12{height:3rem}.lg\:w-11\/12{width:91.666667%}.lg\:w-12{width:3rem}.lg\:gap-4{gap:1rem}.lg\:px-9{padding-left:2.25rem;padding-right:2.25rem}.lg\:py-3{padding-top:0.75rem;padding-bottom:0.75rem}.lg\:text-xl{font-size:1.25rem;line-height:1.75rem}}</style><style>/* ! tailwindcss v3.4.5 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }.collapse{visibility:collapse}.sticky{position:sticky}.mx-auto{margin-left:auto;margin-right:auto}.mt-24{margin-top:6rem}.block{display:block}.flex{display:flex}.hidden{display:none}.h-7{height:1.75rem}.h-8{height:2rem}.w-7{width:1.75rem}.w-8{width:2rem}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.items-center{align-items:center}.gap-1{gap:0.25rem}.gap-6{gap:1.5rem}.rounded-lg{border-radius:0.5rem}.bg-btnpramary{--tw-bg-opacity:1;background-color:rgb(180 244 97 / var(--tw-bg-opacity))}.bg-navColor{--tw-bg-opacity:1;background-color:rgb(249 247 243 / var(--tw-bg-opacity))}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-medium{font-weight:500}.font-semibold{font-weight:600}.text-coineClor{color:rgba(17, 17, 17, 0.7)}@media (min-width: 1024px){.lg\:block{display:block}.lg\:hidden{display:none}.lg\:h-12{height:3rem}.lg\:w-11\/12{width:91.666667%}.lg\:w-12{width:3rem}.lg\:gap-4{gap:1rem}.lg\:px-9{padding-left:2.25rem;padding-right:2.25rem}.lg\:py-3{padding-top:0.75rem;padding-bottom:0.75rem}.lg\:text-xl{font-size:1.25rem;line-height:1.75rem}}</style></head>
+
+<body>
+    <!-- this is nav section  -->
+    <div class="bg-navColor sticky">
+        <div class="navbar lg:w-11/12 mx-auto">
+            <div class="navbar-start">
+                <button id="blo2btn" class="lg:px-9 px-5 py-2 lg:py-3 bg-btnpramary rounded-lg lg:text-xl text-base font-semibold">Blog</button>
+            </div>
+            <div class="navbar-center">
+                <div class="flex flex-row items-center lg:gap-4 gap-1">
+                    <img class="lg:h-12 h-8 lg:w-12 w-8" src="./assets/logo.png" alt="">
+                    <h1 class="lg:block hidden lg:text-xl text-sm font-semibold">Donate Bangladesh</h1>
+                    <h1 class="lg:hidden block lg:text-xl text-sm font-semibold">Donate BD</h1>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="flex flex-row items-center lg:gap-4 gap-1">
+                    <img class="w-7 h-7" src="./assets/coin.png" alt="">
+                    <p class="text-coineClor lg:text-xl text-base"><span id="mainBlanceIs">5000</span>BDT</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- mcq section  -->
+
+    <div class="lg:w-11/12 mx-auto flex flex-col gap-6 mt-24">
+
+
+        <!-- card 1 -->
+
+        <div tabindex="0" class="collapse bg-base-200">
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+                <p>The DOM is a programming interface for interacting with HTML, XML, and other structured documents. It represents the document as a tree structure, allowing developers to access, modify, and create elements and attributes within the document.
+                </p>
+            </div>
+        </div>
+
+        <!-- card 2 -->
+
+        <div tabindex="0" class="collapse bg-base-200">
+            <div class="collapse-title text-xl font-medium">How do you select an element from the Dom?</div>
+            <div class="collapse-content">
+                <p>Use document.getElementById('id'), document.querySelector('selector'), document.getElementsByClassName('className'), or document.getElementsByTagName('tagName') to select DOM elements.</p>
+            </div>
+        </div>
+
+        <!-- card 3 -->
+
+        <div tabindex="0" class="collapse bg-base-200">
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the Dom, and why is it useful?</div>
+            <div class="collapse-content">
+                <p>Event delegation is a technique where you attach an event listener to a parent element to handle events for its children. It's more efficient and easier to manage than adding individual event listeners to each child.</p>
+            </div>
+        </div>
+
+        <!-- card 4 -->
+
+        <div tabindex="0" class="collapse bg-base-200">
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element’s attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+                <p>To manipulate attributes in the DOM, use element.getAttribute('name'), element.setAttribute('name', 'value'), and element.removeAttribute('name'). For styles, use element.style.property = 'value' to set and element.style.removeProperty('property') to remove.</p>
+            </div>
+        </div>
+    </div>
+    <script>document.getElementById('blo2btn').addEventListener('click', function () {
+            window.location.href = '/index.html';
+        })
+    </script>
+    <script src="js/add.js"></script>
+
+
+</body></html>
